@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhunik Tents | Luxury Wedding Tents, Royal Mandaps & Event Decor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royalGold: {
+                            50: '#fdfbf7',
+                            100: '#f7f1e3',
+                            200: '#ede0c2',
+                            300: '#dfca99',
+                            400: '#cfb16f',
+                            500: '#b8974a',
+                            600: '#9a7b39',
+                            700: '#7b602e',
+                            800: '#644e27',
+                            900: '#534022',
+                        },
+                        champagne: {
+                            light: '#faf7f2',
+                            DEFAULT: '#f3ede2',
+                            dark: '#e4d8c5'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.85) 0%, rgba(40, 35, 25, 0.75) 100%);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f7f1e3;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b8974a;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-champagne-light font-sans text-stone-800 antialiased selection:bg-royalGold-500 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-stone-900 text-royalGold-300 text-xs sm:text-sm py-2 px-4 border-b border-royalGold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span><i class="fas fa-phone-alt text-royalGold-400 mr-2"></i><a href="tel:9215328808" class="hover:text-white transition">+91 92153-28808</a></span>
+                <span class="hidden md:inline"><i class="fas fa-envelope text-royalGold-400 mr-2"></i>info@adhuniktents.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-stone-300">India's Premier Luxury Wedding & Event Tent Manufacturer</span>
+                <div class="flex gap-3 text-royalGold-400">
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-stone-900 flex items-center justify-center text-royalGold-400 font-cinzel font-bold text-xl border border-royalGold-400/40">
+                    AT
+                </div>
+                <div>
+                    <span class="font-cinzel font-bold text-xl sm:text-2xl text-stone-900 tracking-wider block">ADHUNIK TENTS</span>
+                    <span class="text-[10px] tracking-widest text-royalGold-600 uppercase font-semibold block -mt-1">Royal Event Infrastructure</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-stone-700">
+                <a href="#home" class="hover:text-royalGold-600 transition">Home</a>
+                <a href="#about" class="hover:text-royalGold-600 transition">Legacy</a>
+                <a href="#categories" class="hover:text-royalGold-600 transition">Collections</a>
+                <a href="#gallery" class="hover:text-royalGold-600 transition">Gallery</a>
+                <a href="#furnishing" class="hover:text-royalGold-600 transition">Furnishing & Decor</a>
+                <a href="#contact" class="hover:text-royalGold-600 transition">Contact</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/919215328808" target="_blank" class="bg-royalGold-500 hover:bg-royalGold-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Get Catalog
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-stone-800 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-3 font-medium">
+            <a href="#home" class="block text-stone-800 hover:text-royalGold-600 py-1">Home</a>
+            <a href="#about" class="block text-stone-800 hover:text-royalGold-600 py-1">Legacy</a>
+            <a href="#categories" class="block text-stone-800 hover:text-royalGold-600 py-1">Collections</a>
+            <a href="#gallery" class="block text-stone-800 hover:text-royalGold-600 py-1">Gallery</a>
+            <a href="#furnishing" class="block text-stone-800 hover:text-royalGold-600 py-1">Furnishing & Decor</a>
+            <a href="#contact" class="block text-stone-800 hover:text-royalGold-600 py-1">Contact</a>
+            <div class="pt-2">
+                <a href="https://wa.me/919215328808" target="_blank" class="w-full bg-royalGold-500 text-white text-center py-2.5 rounded-full font-semibold block">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-stone-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1920" alt="Luxury Wedding Tent Decor" class="w-full h-full object-cover object-center opacity-40 transform scale-105 animate-pulse duration-10000">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-20">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-royalGold-500/20 text-royalGold-300 border border-royalGold-400/30 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm">
+                Exquisite Royal Event Architecture
+            </span>
+            <h1 class="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-wide mb-6 leading-tight">
+                Crafting Majestic <span class="text-royalGold-400">Wedding Tents</span> & Decor
+            </h1>
+            <p class="text-stone-300 text-base sm:text-xl max-w-3xl mx-auto font-light mb-10 leading-relaxed">
+                Transforming grand celebrations into timeless royal experiences with bespoke luxury tents, palatial mandaps, elegant stage setups, and premium event furnishings.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#categories" class="w-full sm:w-auto bg-royalGold-500 hover:bg-royalGold-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition duration-300 text-center">
+                    Explore Collections
+                </a>
+                <a href="https://wa.me/919215328808?text=Hello%20Adhunik%20Tents,%20I%20would%20like%20to%20know%20more%20about%20your%20luxury%20wedding%20tents%20and%20decorations." target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-8 py-4 rounded-full backdrop-blur-sm transition duration-300 text-center flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-green-400 text-lg"></i> Instant WhatsApp Chat
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/10 text-center">
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-royalGold-400 block mb-1">25+</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Years of Excellence</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-royalGold-400 block mb-1">1000+</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Grand Weddings Decorated</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-royalGold-400 block mb-1">100%</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Custom Craftsmanship</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-royalGold-400 block mb-1">Global</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Delivery & Setup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-royalGold-600 font-semibold uppercase tracking-widest text-sm block">About Adhunik Tents</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
+                    Where Tradition Meets Modern Luxury Event Engineering
+                </h2>
+                <p class="text-stone-600 leading-relaxed font-light text-base sm:text-lg">
+                    Adhunik Tents stands as a pioneer in the design and manufacturing of ultra-luxurious wedding tents, royal mandaps, magnificent exhibition structures, and opulent event furnishings. Combining heritage Indian craftsmanship with state-of-the-art structural fabrics, we create breath-taking ambiances for destination weddings, royal celebrations, and elite corporate gatherings.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-start gap-3 bg-champagne-light p-4 rounded-xl border border-champagne-dark/40">
+                        <div class="text-royalGold-600 text-xl mt-1"><i class="fas fa-crown"></i></div>
+                        <div>
+                            <h4 class="font-bold text-stone-900 mb-1">Royal Aesthetics</h4>
+                            <p class="text-stone-600 text-xs sm:text-sm">Regal detailing, rich embroidery, and majestic pillar structures.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 bg-champagne-light p-4 rounded-xl border border-champagne-dark/40">
+                        <div class="text-royalGold-600 text-xl mt-1"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h4 class="font-bold text-stone-900 mb-1">Weather Resistant</h4>
+                            <p class="text-stone-600 text-xs sm:text-sm">High-grade waterproof and flame-retardant premium fabrics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1000" alt="Luxury Wedding Setup" class="w-full h-[450px] object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 z-20 bg-stone-900 text-white p-6 rounded-2xl shadow-xl hidden sm:block border border-royalGold-400/30 max-w-xs">
+                    <span class="font-cinzel text-royalGold-400 text-3xl font-bold block mb-1">Pan India</span>
+                    <span class="text-xs text-stone-300 uppercase tracking-wider block">& International Event Setup Services Available</span>
+                </div>
+                <div class="absolute -top-6 -right-6 w-48 h-48 bg-royalGold-100 rounded-full -z-10 blur-2xl opacity-70"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories / Collections Section -->
+    <section id="categories" class="py-20 px-4 sm:px-6 lg:px-8 bg-champagne-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-royalGold-600 font-semibold uppercase tracking-widest text-sm block mb-2">Our Masterpieces</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-stone-900 mb-4">Luxury Collections & Products</h2>
+                <p class="text-stone-600 font-light text-base sm:text-lg">Discover our exclusive range of royal wedding infrastructure designed for unforgettable celebrations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 hover:shadow-2xl transition duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800" alt="Luxury Wedding Tents" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-stone-900/80 text-royalGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-royalGold-500/30">Flagship</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-stone-900 mb-2">Royal Wedding Tents</h3>
+                            <p class="text-stone-600 text-sm font-light mb-6 leading-relaxed">Palatial Marquee tents, Rajwadi tents, Mughal tents, and colonial luxury shamianas crafted with exquisite embroidery and waterproof layers.</p>
+                        </div>
+                        <button onclick="openInquiry('Royal Wedding Tents')" class="w-full bg-stone-900 hover:bg-royalGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 hover:shadow-2xl transition duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1545232979-fbf5e2c7a189?auto=format&fit=crop&q=80&w=800" alt="Royal Mandap & Stage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-stone-900/80 text-royalGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-royalGold-500/30">Most Popular</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-stone-900 mb-2">Grand Mandaps & Stages</h3>
+                            <p class="text-stone-600 text-sm font-light mb-6 leading-relaxed">Exquisite fiber, wooden, and metallic mandaps, designer wedding stages, Jaimal setups, and floral-integrated structural backdrops.</p>
+                        </div>
+                        <button onclick="openInquiry('Grand Mandaps & Stages')" class="w-full bg-stone-900 hover:bg-royalGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 hover:shadow-2xl transition duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800" alt="Event Furnishing & Seating" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-stone-900/80 text-royalGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-royalGold-500/30">Luxury Decor</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-stone-900 mb-2">Furnishing & Seating</h3>
+                            <p class="text-stone-600 text-sm font-light mb-6 leading-relaxed">Royal maharaja chairs, velvet sofas, banquet seating, divans, luxurious carpets, drapes, and designer table setups.</p>
+                        </div>
+                        <button onclick="openInquiry('Furnishing & Seating')" class="w-full bg-stone-900 hover:bg-royalGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 hover:shadow-2xl transition duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=800" alt="Exhibition & Party Tents" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-stone-900/80 text-royalGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-royalGold-500/30">Commercial</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-stone-900 mb-2">Exhibition & Party Tents</h3>
+                            <p class="text-stone-600 text-sm font-light mb-6 leading-relaxed">Large-span German hangers, Pagoda tents, corporate event marquees, and festival pavilions built for secure large gatherings.</p>
+                        </div>
+                        <button onclick="openInquiry('Exhibition & Party Tents')" class="w-full bg-stone-900 hover:bg-royalGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 hover:shadow-2xl transition duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=800" alt="Lighting & Ambiance Decor" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-stone-900/80 text-royalGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-royalGold-500/30">Atmospheric</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-stone-900 mb-2">Lighting & Ambiance Decor</h3>
+                            <p class="text-stone-600 text-sm font-light mb-6 leading-relaxed">Crystal chandeliers, fairy light canopies, warm LED uplighting, entrance gate arches, and traditional brass lamps.</p>
+                        </div>
+                        <button onclick="openInquiry('Lighting & Ambiance Decor')" class="w-full bg-stone-900 hover:bg-royalGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 hover:shadow-2xl transition duration-300 flex flex-col group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="Complete Event Solutions" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-stone-900/80 text-royalGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-royalGold-500/30">Turnkey</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-stone-900 mb-2">Turnkey Event Planning</h3>
+                            <p class="text-stone-600 text-sm font-light mb-6 leading-relaxed">End-to-end wedding production including theme conception, manufacturing, logistics, on-site setup, and professional dismantling.</p>
+                        </div>
+                        <button onclick="openInquiry('Turnkey Event Planning')" class="w-full bg-stone-900 hover:bg-royalGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-400"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Visual Showcase Section -->
+    <section id="gallery" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-royalGold-600 font-semibold uppercase tracking-widest text-sm block mb-2">Visual Portfolio</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-stone-900 mb-4">Grand Celebrations Showcase</h2>
+                <p class="text-stone-600 font-light text-base sm:text-lg">A glimpse into our luxurious marquee setups, royal receptions, and magnificent mandap installations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="relative group overflow-hidden rounded-2xl h-80 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="Wedding Setup 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-royalGold-400 text-xs font-semibold uppercase tracking-widest block mb-1">Destination Wedding</span>
+                            <h4 class="text-white font-cinzel text-lg font-bold">Royal Palace Marquee</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl h-80 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&q=80&w=800" alt="Wedding Setup 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-royalGold-400 text-xs font-semibold uppercase tracking-widest block mb-1">Mandap Decor</span>
+                            <h4 class="text-white font-cinzel text-lg font-bold">Floral Heritage Mandap</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl h-80 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800" alt="Wedding Setup 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-royalGold-400 text-xs font-semibold uppercase tracking-widest block mb-1">Reception Hall</span>
+                            <h4 class="text-white font-cinzel text-lg font-bold">Crystal Canopy Ceiling</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl h-80 shadow-md">
+                    <img src="https://images.unsplash.com/photo-1545232979-fbf5e2c7a189?auto=format&fit=crop&q=80&w=800" alt="Wedding Setup 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-royalGold-400 text-xs font-semibold uppercase tracking-widest block mb-1">Stage Design</span>
+                            <h4 class="text-white font-cinzel text-lg font-bold">Grand Jaimala Stage</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Furnishing & Decor Detail Section -->
+    <section id="furnishing" class="py-20 px-4 sm:px-6 lg:px-8 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative rounded-2xl overflow-hidden shadow-2xl border border-royalGold-500/30">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1000" alt="Luxury Furnishings" class="w-full h-[450px] object-cover">
+            </div>
+            <div class="order-1 lg:order-2 space-y-6">
+                <span class="text-royalGold-400 font-semibold uppercase tracking-widest text-sm block">Unmatched Comfort & Elegance</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                    Premium Furnishings & Royal Seating Arrangements
+                </h2>
+                <p class="text-stone-300 leading-relaxed font-light text-base sm:text-lg">
+                    Every detail matters when creating a royal ambiance. Adhunik Tents provides an extensive catalog of handcrafted Maharaja sofas, gold-finish chairs, plush velvet drapes, hand-knotted carpets, and mood lighting fixtures designed to elevate the guest experience.
+                </p>
+                <ul class="space-y-3 font-light text-stone-300">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-royalGold-400"></i> Handcrafted Maharaja & Rani Chairs</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-royalGold-400"></i> Velvet & Brocade Table Linens and Runners</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-royalGold-400"></i> Heavy Hand-Tufted Carpets & Flooring Solutions</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-royalGold-400"></i> Designer Centerpieces & Entrance Gate Props</li>
+                </ul>
+                <div class="pt-4">
+                    <a href="https://wa.me/919215328808?text=Hello,%20I%20want%20to%20view%20your%20furnishing%20and%20seating%20catalog." target="_blank" class="bg-royalGold-500 hover:bg-royalGold-600 text-white font-semibold px-8 py-3.5 rounded-full shadow-lg transition inline-flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> Request Furnishing Catalog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-champagne-light">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <span class="text-royalGold-600 font-semibold uppercase tracking-widest text-sm block">Get In Touch</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
+                    Plan Your Next Grand Celebration With Us
+                </h2>
+                <p class="text-stone-600 font-light leading-relaxed">
+                    Ready to elevate your event infrastructure? Contact our design consultants today for custom tent manufacturing quotes, event setup consultations, and comprehensive catalog sharing.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-stone-200">
+                        <div class="w-12 h-12 rounded-full bg-royalGold-100 text-royalGold-600 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-500 uppercase tracking-wider block">Call Us Directly</span>
+                            <a href="tel:9215328808" class="font-bold text-stone-900 text-lg hover:text-royalGold-600 transition">+91 92153-28808</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-stone-200">
+                        <div class="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-500 uppercase tracking-wider block">WhatsApp Support</span>
+                            <a href="https://wa.me/919215328808" target="_blank" class="font-bold text-stone-900 text-lg hover:text-green-600 transition">+91 92153-28808</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-stone-200">
+                        <div class="w-12 h-12 rounded-full bg-royalGold-100 text-royalGold-600 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-500 uppercase tracking-wider block">Email Address</span>
+                            <span class="font-bold text-stone-900 text-base">info@adhuniktents.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-stone-200">
+                <h3 class="font-cinzel text-2xl font-bold text-stone-900 mb-6">Send An Instant Inquiry</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Your Full Name</label>
+                        <input type="text" id="form-name" required class="w-full bg-champagne-light border border-stone-300 rounded-xl px-4 py-3 text-stone-900 focus:outline-none focus:border-royalGold-500 transition" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Phone Number</label>
+                        <input type="tel" id="form-phone" required class="w-full bg-champagne-light border border-stone-300 rounded-xl px-4 py-3 text-stone-900 focus:outline-none focus:border-royalGold-500 transition" placeholder="Enter phone number">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Interested Product / Service</label>
+                        <select id="form-product" class="w-full bg-champagne-light border border-stone-300 rounded-xl px-4 py-3 text-stone-900 focus:outline-none focus:border-royalGold-500 transition">
+                            <option value="Royal Wedding Tents">Royal Wedding Tents</option>
+                            <option value="Grand Mandaps & Stages">Grand Mandaps & Stages</option>
+                            <option value="Furnishing & Seating">Furnishing & Seating</option>
+                            <option value="Exhibition & Party Tents">Exhibition & Party Tents</option>
+                            <option value="Lighting & Ambiance Decor">Lighting & Ambiance Decor</option>
+                            <option value="Turnkey Event Planning">Turnkey Event Planning</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-600 mb-1">Message / Requirements</label>
+                        <textarea id="form-message" rows="4" class="w-full bg-champagne-light border border-stone-300 rounded-xl px-4 py-3 text-stone-900 focus:outline-none focus:border-royalGold-500 transition" placeholder="Tell us about your event date, location, and requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-royalGold-500 hover:bg-royalGold-600 text-white font-semibold py-4 rounded-xl shadow-lg transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> Send Inquiry via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-royalGold-500 flex items-center justify-center text-stone-900 font-cinzel font-bold text-lg">
+                        AT
+                    </div>
+                    <span class="font-cinzel font-bold text-white text-xl tracking-wider">ADHUNIK TENTS</span>
+                </div>
+                <p class="text-sm font-light leading-relaxed">
+                    India's leading manufacturer of luxury wedding tents, royal mandap structures, and exclusive event decor. Crafting unforgettable celebrations worldwide.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-royalGold-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-royalGold-400 transition">Our Legacy</a></li>
+                    <li><a href="#categories" class="hover:text-royalGold-400 transition">Collections</a></li>
+                    <li><a href="#gallery" class="hover:text-royalGold-400 transition">Visual Gallery</a></li>
+                    <li><a href="#contact" class="hover:text-royalGold-400 transition">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Collections</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="hover:text-royalGold-400 transition cursor-pointer" onclick="openInquiry('Royal Wedding Tents')">Royal Wedding Tents</span></li>
+                    <li><span class="hover:text-royalGold-400 transition cursor-pointer" onclick="openInquiry('Grand Mandaps & Stages')">Grand Mandaps & Stages</span></li>
+                    <li><span class="hover:text-royalGold-400 transition cursor-pointer" onclick="openInquiry('Furnishing & Seating')">Furnishing & Seating</span></li>
+                    <li><span class="hover:text-royalGold-400 transition cursor-pointer" onclick="openInquiry('Exhibition & Party Tents')">Exhibition & Party Tents</span></li>
+                    <li><span class="hover:text-royalGold-400 transition cursor-pointer" onclick="openInquiry('Lighting & Ambiance Decor')">Lighting & Ambiance Decor</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Contact Info</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fas fa-phone-alt text-royalGold-400 mr-2"></i> <a href="tel:9215328808" class="hover:text-white">+91 92153-28808</a></li>
+                    <li><i class="fab fa-whatsapp text-green-400 mr-2"></i> <a href="https://wa.me/919215328808" target="_blank" class="hover:text-white">+91 92153-28808</a></li>
+                    <li><i class="fas fa-envelope text-royalGold-400 mr-2"></i> info@adhuniktents.com</li>
+                    <li><i class="fas fa-map-marker-alt text-royalGold-400 mr-2"></i> Manufacturing Hub, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2026 Adhunik Tents. All Rights Reserved. Designed for Luxury Event Professionals.
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Action Buttons (15-20% smaller, polished, functional) -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-2.5 items-end">
+        <!-- Call Button -->
+        <a href="tel:9215328808" aria-label="Call Adhunik Tents" class="w-11 h-11 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span class="absolute right-14 bg-stone-900 text-white text-[11px] font-medium py-1 px-2.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+                Call Now
+            </span>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919215328808?text=Hello%20Adhunik%20Tents,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20wedding%20tents%20and%20decorations." target="_blank" aria-label="WhatsApp Adhunik Tents" class="w-11 h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span class="absolute right-14 bg-stone-900 text-white text-[11px] font-medium py-1 px-2.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+                WhatsApp Us
+            </span>
+        </a>
+    </div>
+
+    <!-- JavaScript functionality -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quick inquiry function
+        function openInquiry(productName) {
+            const phoneNumber = "919215328808";
+            const message = encodeURIComponent(`Hello Adhunik Tents, I am interested in your "${productName}". Please share details, pricing, and catalog.`);
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        // Form submission via WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const product = document.getElementById('form-product').value;
+            const message = document.getElementById('form-message').value;
+
+            const whatsappNumber = "919215328808";
+            const text = encodeURIComponent(`New Inquiry from Website:\n\nName: ${name}\nPhone: ${phone}\nInterested Product: ${product}\nMessage: ${message}`);
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
